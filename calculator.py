@@ -8,7 +8,7 @@ def calculate(num1, operator, num2):
     elif operator == '/':
         result = num1 / num2
     else:
-        print("Invalid example!")
+        print("Invalid example format!")
         return
     print(f"{num1} {operator} {num2} = {result}")
 
@@ -24,5 +24,5 @@ while try_again.lower() == 'y' or try_again == '':
                 num2 = int(parts[1].strip())
                 calculate(num1, operator, num2)
             except:
-                print("Invalid input format.")
-    try_again = input("You want to calculate more? [Y/n]\n")
+                print("Invalid example format.")
+    try_again = input("Do you want to calculate more? [Y/n]\n")
