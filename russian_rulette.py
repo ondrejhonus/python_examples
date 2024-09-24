@@ -27,4 +27,4 @@ while play_more == 'y' or play_more == '':
             time.sleep(3)
             print("The computer didn't get shot")
     print(f"Computer: {c_points} You: {p_points}")
-    play_more = input("Do you want to play again?")
+    play_more = input("Do you want to play again? [Y/n]")
